@@ -28,7 +28,7 @@
 			"image": "bnagaraja9099/multi-nginx",
 			"hostName": "worker",
 			"essential": true,
-			"memory": 128
+			"memory": 128,
 			"portMappings": [
 				{
 					"hostPort": 80, 
