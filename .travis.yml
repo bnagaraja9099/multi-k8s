@@ -14,11 +14,9 @@ before_install:
   # Encryypted file using command: travis encrypt-file service-account.json -r bnagaraja9099/multi-k8s
   # the output of the command has this open ssl listed below. 
   # this command will un encrypt the file and keep it ready for gcloud login later. 
-  
   - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d
 
-
-	# download and install google cloud sdk
+  # download and install google cloud sdk
   - curl https://sdk.cloud.google.com | bash > /dev/null;
   - source $HOME/google-cloud-sdk/path.bash.inc
   
