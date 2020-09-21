@@ -1,3 +1,4 @@
+echo $SHA
 docker build -t bnagraja9099/multi-client:latest -t bnagraja9099/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t bnagraja9099/multi-server:latest -t bnagraja9099/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t bnagraja9099/multi-worker:latest -t bnagraja9099/multi-worker:$SHA -f ./worker/Dockerfile ./worker
